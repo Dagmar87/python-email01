@@ -9,8 +9,8 @@ from email import encoders
 # Iniciar o servidor SMTP
 host = "smtp.gmail.com"
 port = "587"
-login = "dagmar@iupay.com.br"
-senha = "GunDamWinG87@"
+login = "xxxxx@gmail.com"
+senha = "XXXXXXXXXX"
 server = smtplib.SMTP(host,port)
 server.ehlo()
 server.starttls()
@@ -20,7 +20,7 @@ server.login(login,senha)
 corpo = "<b>Meu é José Dagmar e estou testando o email feito com a linguagem de programação em Python</b>"
 email_msg = MIMEMultipart()
 email_msg['From'] = login
-email_msg['To'] = 'jdfssobrinho@gmail.com'
+email_msg['To'] = 'xxxxxxxx@gmail.com'
 email_msg['Subject'] = "Bem vindo ao teste de email em Python"
 email_msg.attach(MIMEText(corpo,'html'))
 
